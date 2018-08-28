@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    /**
+             * @param {number} n
+             *Example 1:
+
+            *Input: 27
+            *Output: true
+            *Example 2:
+
+            *Input: 0
+            *Output: false
+            *Example 3:
+
+            *Input: 9
+            *Output: true
+            *Example 4:
+
+            *Input: 45
+            *Output: false
+             * @return {boolean}
+             */
+    var isPowerOfThree = function (n) {
+      var number = 1;
+      while (number < n) {
+        number = number * 3;
+      }
+      if (number == n) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

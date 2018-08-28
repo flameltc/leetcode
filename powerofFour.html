@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    /**
+     * @param {number} num
+     * @return {boolean}
+     */
+    var isPowerOfFour = function (num) {
+      var number = 1;
+      while (number < num) {
+        number = number * 4;
+      }
+      if (number == num) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

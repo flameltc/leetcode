@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    /**
+     * @param {number} n
+     * @return {boolean}
+     */
+
+    var isHappy = function (n) {
+      var value = [];
+      do {
+        value.push(n);
+        sum = 0;
+        while (n > 0) {
+          var dig = n % 10;
+          sum += dig * dig;
+          n = Math.floor(n / 10);
+        }
+        n = sum;
+      } while (!isN(n, value) && n !== 1);
+      if (n == 1) {
+        return true;
+      } else {
+        return false;
+      }
+
+      function isN(el, array) {
+        for (let i = 0; i < array.length; i++) {
+          if (el == array[i]) {
+            return true;
+            break;
+          }
+        }
+        return false;
+      }
+    };
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
