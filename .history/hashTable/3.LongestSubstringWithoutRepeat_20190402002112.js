@@ -33,3 +33,4 @@ var lengthOfLongestSubstring = function (s) {
   }
   return maxLen
 }
+debugger;lengthOfLongestSubstring("bbbbbb")
